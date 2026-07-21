@@ -29,14 +29,6 @@ dependencies {
 	include(implementation('com.github.Vatuu:discord-rpc:1.6.2'))
 }
 
-loom {
-	runs {
-		client {
-			programArgs "--username", "SoyTrunix"
-		}
-	}
-}
-
 processResources {
 	def version = project.version
 	inputs.property "version", version
