@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "easyrpc",
+	"version": "${version}",
+	"name": "EasyRPC",
+	"description": "Simple Discord RPC for Minecraft.",
+	"authors": [
+		"SoyTrunix"
+	],
+	"contact": {
+		"source": "youtube.com/@SoyTrunix",
+		"homepage": "youtube.com/@SoyTrunix"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/easyrpc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.soytrunix.EasyRPC"
+		],
+		"client": [
+			"com.soytrunix.EasyRPCClient"
+		]
+	},
+	"mixins": [
+		"easyrpc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
